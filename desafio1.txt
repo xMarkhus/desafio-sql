@@ -1,0 +1,28 @@
+Crie as seguintes tabelas no MySQL com os atributos especificados:
+
+Produtos: id_produto (INT, PK), nome_produto (VARCHAR), descricao (TEXT), preco (DECIMAL), estoque (INT), categoria (VARCHAR)
+
+Clientes: id_cliente (INT, PK), nome_cliente (VARCHAR), email (VARCHAR), endereco (VARCHAR)
+
+Pedidos: id_pedido (INT, PK), id_cliente (INT, FK), data_pedido (DATE), status (VARCHAR)
+
+Itens_Pedido: id_item (INT, PK), id_pedido (INT, FK), id_produto (INT, FK), quantidade (INT), preco_unitario (DECIMAL)
+
+Consultas SQL:
+
+Escreva as seguintes consultas SQL para responder às perguntas da loja virtual:
+1. Liste o nome e a descrição de todos os produtos da categoria "Smartphones" com preço superior a R$ 1000, ordenados pelo nome do produto.
+2. Calcule o valor total de compras por cliente, mostrando o nome do cliente e o valor total, ordenado pelo valor total em ordem decrescente.
+3. Encontre os 5 produtos mais vendidos, mostrando o nome do produto e a quantidade total vendida, ordenados pela quantidade em ordem decrescente.
+4. Liste os clientes que possuem pedidos com status "Em processamento", mostrando o nome do cliente e o número do pedido.
+5. Calcule a receita total da loja por mês, mostrando o mês e a receita total, ordenados pelo mês.
+
+Otimização:
+Analise as consultas criadas e sugira possíveis otimizações para melhorar o desempenho, como a criação de índices.
+
+Critérios de Avaliação:
+1. Funcionamento correto das consultas SQL.
+2. Clareza e organização do código SQL.
+3. Eficiência das consultas (otimizações sugeridas).
+
+
